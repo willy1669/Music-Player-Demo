@@ -8,6 +8,11 @@ Playlist.prototype.add = function (song) {
 }
 
 Playlist.prototype.play = function () {
-    var currentSong = this.songs[this.isnowPlayingIndex];
+    var currentSong = this.songs[this.nowPlayingIndex];
     currentSong.play();
+}
+
+Playlist.prototype.stop = function () {
+    var currentSong = this.songs[this.nowPlayingIndex];
+    currentSong.stop();
 }
