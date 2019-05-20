@@ -8,3 +8,7 @@ function Song (title, artist, duration) {
 Song.prototype.play = function () {
     this.isPlaying = true;
 }
+
+Song.prototype.stop = function () {
+    this.isPlaying = false;
+}
