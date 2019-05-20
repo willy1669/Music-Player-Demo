@@ -24,5 +24,11 @@ Playlist.prototype.next = function () {
         this.nowPlayingIndex = 0;
     }
     Playlist.play();
+}
 
+Playlist.prototype.renderInElement = function (list) {
+    list.innerHTML = "";
+    for (var i = 0; i < this.songs.length; i++) {
+        list.innerHTML += this.songs[i].toHTML();
+    }
 }
