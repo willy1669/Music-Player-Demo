@@ -12,3 +12,18 @@ Song.prototype.play = function () {
 Song.prototype.stop = function () {
     this.isPlaying = false;
 }
+
+Song.prototype.toHtml = function () {
+    var htmlString = '<li ';
+    if (this.isPlaying) {
+        htmlString += 'class="current"';
+    }
+    htmlString += '>';
+    htmlString += 'this.title';
+    htmlString += '-';
+    htmlString += 'this.artist';
+    htmlString += '<span class="duration">'
+    htmlString += 'this.duration'
+    htmlString += '</span></li>'
+    return htmlString;
+}
