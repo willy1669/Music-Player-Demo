@@ -4,3 +4,7 @@ function Song (title, artist, duration) {
     this.duration = duration;
     this.isPlaying = false
 }
+
+Song.prototype.play = function () {
+    this.isPlaying = true;
+}
