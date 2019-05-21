@@ -1,7 +1,7 @@
 function Media (title, duration) {
     this.title = title;
     this.duration = duration;
-    this.isPlaying = false
+    this.isPlaying = false;
 }
 
 Media.prototype.play = function () {
